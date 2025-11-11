@@ -1,5 +1,5 @@
 /**
- * Arslan-Tech-Bot Bot - A WhatsApp Bot
+ * Fazi-Tech-Bot Bot - A WhatsApp Bot
  * Copyright (c) 2024 Professor
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -70,10 +70,10 @@ setInterval(() => {
     }
 }, 30_000) // check every 30 seconds
 
-let phoneNumber = "923237045919"
+let phoneNumber = "923266105873"
 let owner = JSON.parse(fs.readFileSync('./data/owner.json'))
 
-global.botname = "ARSLAN-TECH-MD"
+global.botname = "Fazi-Tech-Bot"
 global.themeemoji = "•"
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
@@ -148,8 +148,8 @@ async function startXeonBotInc() {
                             forwardingScore: 1,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: '120363348739987203@newsletter',
-                                newsletterName: 'Arslan-Tech-MD',
+                                newsletterJid: '120363421896999345@newsletter',
+                                newsletterName: 'Fazi-Tech-Bot',
                                 serverMessageId: -1
                             }
                         }
@@ -207,7 +207,7 @@ async function startXeonBotInc() {
         if (!!global.phoneNumber) {
             phoneNumber = global.phoneNumber
         } else {
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFormat: 923237045919 (without + or spaces) : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFormat: 923266105873 (without + or spaces) : `)))
         }
 
         // Clean the phone number - remove any non-digit characters
@@ -242,27 +242,27 @@ async function startXeonBotInc() {
 
             const botNumber = XeonBotInc.user.id.split(':')[0] + '@s.whatsapp.net';
             await XeonBotInc.sendMessage(botNumber, {
-                text: `> 🤖 _*Arslan-Tech-MD Connected!*_\n\n> ⏰ *Time*: ${new Date().toLocaleString()}\n> ✅ *Status*: Online and Ready!
+                text: `> 🤖 _*Fazi-Tech-Bot Connected!*_\n\n> ⏰ *Time*: ${new Date().toLocaleString()}\n> ✅ *Status*: Online and Ready!
                 \n> ✅Make sure to join below channel`,
                 contextInfo: {
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363348739987203@newsletter',
-                        newsletterName: 'Arslan-Tech-MD',
+                        newsletterJid: '120363421896999345@newsletter',
+                        newsletterName: 'Fazi-Tech-Bot',
                         serverMessageId: -1
                     }
                 }
             });
 
             await delay(1999)
-            console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${global.botname || 'ARSLAN-TECH-BOT'} ]`)}\n\n`))
+            console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${global.botname || 'Fazi-Tech-Bot'} ]`)}\n\n`))
             console.log(chalk.cyan(`< ================================================== >`))
-            console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: ARSLANMD OFFICIAL`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} GITHUB: Arslan-MD`))
+            console.log(chalk.magenta(`\n${global.themeemoji || '•'} YT CHANNEL: Fazi-Tech-Bot OFFICIAL`))
+            console.log(chalk.magenta(`${global.themeemoji || '•'} GITHUB: FAIZAN jutt`))
             console.log(chalk.magenta(`${global.themeemoji || '•'} WA NUMBER: ${owner}`))
-            console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: ArslanMD Official`))
-            console.log(chalk.green(`${global.themeemoji || '•'}> 🤖 Arslan-Tech-MD Connected Successfully! ✅`))
+            console.log(chalk.magenta(`${global.themeemoji || '•'} CREDIT: Fazi-Tech-Bot Official`))
+            console.log(chalk.green(`${global.themeemoji || '•'}> 🤖 Fazi-Tech-Bot Connected Successfully! ✅`))
             console.log(chalk.blue(`Bot Version: ${settings.version}`))
         }
         if (connection === 'close') {
