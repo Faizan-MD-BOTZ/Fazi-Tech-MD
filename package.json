@@ -1,12 +1,12 @@
 {
-  "name": "arslan-tech-md",
+  "name": "Fazi-Tech-Bot",
   "version": "2.0.0",
-  "description": "🤖 Arslan-Tech Bot - A Powerful WhatsApp MD Chatbot with Fun, Utilities & Custom Tools",
+  "description": "🤖 Fazi-Tech-Bot - A Powerful WhatsApp MD Chatbot with Fun, Utilities & Custom Tools",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "docker:build": "docker build -t Arslan-Tech-Bot.",
+    "docker:build": "docker build -t Fazi-Tech-Bot.",
     "docker:run": "docker run -e SESSION_ID=$SESSION_ID imran-bot"
   },
   "keywords": [
@@ -17,7 +17,7 @@
     "funbot",
     "whatsapp-automation"
   ],
-  "author": "Arslan-MD",
+  "author": "FAIZAN-md",
   "license": "MIT",
   "dependencies": {
     "@hapi/boom": "^10.0.1",
